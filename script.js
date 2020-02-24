@@ -1,7 +1,7 @@
 const bookDisplay = document.querySelector('#book-display')
 const bookBtn = document.querySelector('#book-input')
 
-let myLibrary
+let myLibrary = []
 
 window.addEventListener('load', function() {
 	let retLibrary = localStorage.getItem('savedLibrary');
@@ -11,9 +11,8 @@ window.addEventListener('load', function() {
 	} else {
 		return;
 	}
+	render()
 })
-
-render()
 
 //creating a book functions
 
