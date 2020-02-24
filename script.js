@@ -1,10 +1,7 @@
 const bookDisplay = document.querySelector('#book-display')
 const bookBtn = document.querySelector('#book-input')
 
-let myLibrary = [{name: 'The Cat in the Hat',
-author: 'Dr. Seuss',
-length: 61,
-read: 'Finished'}]
+let myLibrary
 
 window.addEventListener('load', function() {
 	let retLibrary = localStorage.getItem('savedLibrary');
@@ -15,8 +12,6 @@ window.addEventListener('load', function() {
 		return;
 	}
 })
-
-render()
 
 //creating a book functions
 
