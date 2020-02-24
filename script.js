@@ -13,6 +13,8 @@ window.addEventListener('load', function() {
 	}
 })
 
+render()
+
 //creating a book functions
 
 bookBtn.addEventListener('click', function () {
