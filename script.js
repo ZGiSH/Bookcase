@@ -8,6 +8,7 @@ read: 'Finished'}]
 
 window.addEventListener('load', function() {
 	let retLibrary = localStorage.getItem('savedLibrary');
+	console.log(retLibrary)
 	if (retLibrary.length > 0) {
 		myLibrary = JSON.parse(retLibrary)
 	} else {
